@@ -145,7 +145,7 @@ html, body {
     flex-wrap: wrap;
     font-size: medium;
     width: auto;
-    height: 500px;
+    height: 550px;
     background-color: white;
 }
 
@@ -396,5 +396,6 @@ p {
         margin: 5px 0;
     }
 }
+
 
 
