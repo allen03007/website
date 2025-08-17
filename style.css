@@ -155,7 +155,6 @@ html, body {
     flex: 1;
     min-width: 300px;
     padding: 20px;
-    background-color: white;
     height: 400px;
     color: black;
 }
@@ -397,3 +396,4 @@ p {
         margin: 5px 0;
     }
 }
+
