@@ -1,0 +1,399 @@
+/* Global Reset and Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    background-color: #F5F5F5;
+    color: #333333;
+}
+
+/* Container */
+.container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Heading Row */
+.heading-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 10px;
+    background-color: black;
+    flex-wrap: wrap;
+    color: white;
+}
+
+/* Heading */
+.heading {
+    width: 300px;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Selection Bar */
+.selection {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #E6F7FF;
+    padding: 10px;
+}
+
+/* Home Button */
+.home {
+    background-image: url(home.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Swiper */
+.swiper {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+/* Services */
+.services {
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Description */
+.desc {
+    background-color: black;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-size: small;
+}
+
+/* Zoom Card */
+.zoom-card {
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid #CCCCCC;
+    text-decoration: none;
+    display: inline-block;
+    color: inherit;
+    overflow: hidden;
+    background: white;
+    border-radius: 6px;
+    transition: box-shadow 0.3s ease;
+}
+
+.zoom-card:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.zoom-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.zoom-card:hover img {
+    transform: scale(1.1);
+}
+
+.caption {
+    padding: 10px;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+/* Benefits */
+.benefits {
+    max-width: 300px;
+    display: inline-block;
+    color: inherit;
+    overflow: hidden;
+}
+
+.benefits img {
+    width: 80%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Two-Column Section */
+.two-column {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: medium;
+    width: auto;
+    height: 470px;
+    background-color: white;
+}
+
+/* Text & Image Content */
+.text-content,
+.image-content {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+    background-color: white;
+    height: 400px;
+    color: black;
+}
+
+.image-content img {
+    width: 480px;
+    height:auto;
+    object-fit: contain;
+}
+
+/* Call Button */
+.call-button {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.call-button:hover {
+    background-color: gray;
+    
+}
+
+/* Contact Info */
+.contact-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 40px;
+    flex-wrap: wrap;
+    background-color:black;
+}
+
+.map-section {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+}
+
+.contact-info {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+    padding: 20px;
+    background-color: black;
+    font-size: large;
+    color: white;
+}
+
+/* Arrow List */
+.arrow-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 40px;
+    margin-top:  20px; ;
+    
+}
+
+.arrow-list li::before {
+    content: "➤ ";
+    color: #4A90E2;
+    font-weight: bold;
+    margin-inline-start: auto;
+    margin-inline-end: 10px;
+    
+
+}
+
+/* Logo Section */
+#Name {
+    background-image: url("logo.JPG");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 300px;
+}
+
+#title, #local {
+    color: white;
+}
+
+#local {
+    font-size: x-small;
+}
+
+#logo {
+    padding: 10px;
+}
+
+#phonenum {
+    font-size: smaller;
+}
+
+/* Buttons */
+#buttons, #home2 {
+    color: #333333;
+    background-color: #E6F7FF;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    height: 60px;
+    margin: 10px;
+}
+
+#home2 {
+    width: 60px;
+}
+
+#buttons:hover,
+#home2:hover {
+    background-color: #CCCCCC;
+}
+
+/* Misc Layout IDs */
+#txt, #mid, #left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    height: 60px;
+    width: 100%;
+    text-align: center;
+    padding: 0 10px;
+}
+
+#txt {
+    text-align: left;
+}
+
+#mid {
+    background-color: #4A90E2;
+    color: white;
+}
+
+#about {
+    max-width: 100%;
+    padding: 10px;
+    margin: 10px auto;
+    
+}
+
+/* Background Section */
+#phone {
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+    margin: 0;
+    text-align: center;
+    color: white;
+}
+
+/* Same Day Banner */
+#sameday {
+    background-color: black;
+    text-align: center;
+    padding: 0px;
+    color: white;
+}
+
+#same {
+    font-size: medium;
+}
+
+/* Paragraphs */
+p {
+    margin: 0;
+}
+
+/* Responsive Queries */
+@media screen and (max-width: 768px) {
+    .desktop-only {
+        display: none !important;
+    }
+
+    .home {
+        order: 0;
+        margin-bottom: 10px;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .map-section, .contact-info {
+        max-width: 90%;
+    }
+
+    .heading-row {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .two-column {
+        flex-direction: column;
+    }
+
+    .zoom-card {
+        max-width: 100%;
+    }
+
+    #about {
+        left: 0;
+        width: 90%;
+    }
+
+    #txt, #mid, #left {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .selection {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 0;
+        
+    }
+
+    #home2 {
+        margin: 0;
+        order: 0;
+    }
+
+    #buttons {
+        width: auto;
+        margin: 5px 0;
+    }
+}
